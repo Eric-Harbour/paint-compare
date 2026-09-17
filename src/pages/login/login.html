@@ -3,6 +3,7 @@
     
     <head>
         <link rel="stylesheet" href="login.css">
+        <script src="login.js" defer></script>
         <title></title>
     </head>
     <!-- What we need: banner, cut out for login area, option to sign up, option for forgot password-->
@@ -11,14 +12,27 @@
             <img class="banner-logo" src="../../images/paint-compare-logo.png">
 
         </header>
-        <div class="login-parent-box">
-            <div class="login-child-box">
-                <form id="login">
-                    <label id="email">Email</label>
-                    <input id="email-input">
-                    <label id="password">Password</label>
-                    <input id="password-input">
-                    <input type="button">
+
+        <!-- Login Block -->
+        <div class="login-parent-box">    
+                <form id="login-form">
+                    <div class="login-child-box">
+                        <!-- Email input group -->
+                        <div class="input-group">
+                            <label id="email">Email</label>
+                            <input type="email" id="email-input">
+                        </div>
+
+                        <!-- password input -->
+                        <div class="input-group">
+                            <label id="password">Password</label>
+                            <input type="password" id="password-input">
+                        </div>
+                        <div class="input-group">
+                            <input type="button" id="sign-in-button" value="Sign In" onclick="signIn()">
+                        </div> 
+                       
+                    </div>
                 </form>
             </div>
             

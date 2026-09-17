@@ -1,0 +1,32 @@
+
+img.banner-logo {
+    height: 60px;
+    width: 60px;
+}
+.banner {
+    background-color: red;
+    height: 80px;
+    align-content: center;
+}
+
+.footer {
+    background-color: red;
+}
+
+.login-parent-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    place-content: center;
+    height: auto;
+    width: auto;
+
+}
+
+.login-child-box {
+    height: 400px;
+    width: 600px;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: green;
+}

@@ -4,13 +4,16 @@ import {
   isMainModule,
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
+import { HttpClient, HttpHandler } from '@angular/common/http'
 import express from 'express';
 import { join } from 'node:path';
+import { Inject } from '@angular/core'
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
 const angularApp = new AngularNodeAppEngine();
+
 
 /**
  * Example Express Rest API endpoints can be defined here.
@@ -34,6 +37,11 @@ app.use(
     redirect: false,
   }),
 );
+
+/**
+ * Handle color API
+ */
+
 
 /**
  * Handle all other requests by rendering the Angular application.

@@ -1,0 +1,38 @@
+.ColorCardSection {
+    display: grid;
+    background-color: red;
+    width: 500px;
+    height: 600px;
+    grid-template-rows: 5% 5% 75% 5% 5%;
+    grid-template-columns: 25% 50% 25%;
+}
+
+#colorNumber {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#colorName {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#locationNumber {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#base-interior {
+    grid-row: 4;
+    grid-column: 1
+}
+
+#base-exterior {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+#tinted-primer {
+    grid-row: 5;
+    grid-column: 3
+}

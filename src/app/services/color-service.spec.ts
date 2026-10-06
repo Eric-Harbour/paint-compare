@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
-import { ColorHttpClient } from './color-http-client';
+import { ColorService } from './color-service';
 
-describe('ColorHttpClient', () => {
-  let service: ColorHttpClient;
+describe('ColorService', () => {
+  let service: ColorService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ColorHttpClient);
+    service = TestBed.inject(ColorService);
   });
 
   it('should be created', () => {

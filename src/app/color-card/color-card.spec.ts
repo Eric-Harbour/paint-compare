@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ColorCard } from './color-card';
+import { ColorCard } from './color-card.component';
 
 describe('ColorCard', () => {
   let component: ColorCard;

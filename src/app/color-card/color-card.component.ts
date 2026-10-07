@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ColorHttpClient } from '../services/color-http-client'
+import { ColorService } from '../services/color-card.service'
 import { RouterOutlet } from "@angular/router"
 @Component({
   imports: [RouterOutlet],
@@ -8,5 +8,7 @@ import { RouterOutlet } from "@angular/router"
   templateUrl: './color-card.html',
 })
 export class ColorCard {
-  colorHttpClient = inject(ColorHttpClient);
+  Color 
+
 }
+

@@ -23,16 +23,17 @@
  */
 
 export interface Color {
-    colorNumber: String,
-    colorName: String,
-    lrvNumber?: Number,
-    lrvDescription?: String,
-    locationNumber?: String,
-    tintedPrimer?: String,
-    limitations?: String,
-    interiorBase?: String,
-    exteriorBase?: String,
-    colorSection: String,
+    companyName: string,
+    colorNumber: string,
+    colorName: string,
+    lrvNumber?: number,
+    lrvDescription?: string,
+    locationNumber?: string,
+    tintedPrimer?: string,
+    limitations?: string,
+    interiorBase?: string,
+    exteriorBase?: string,
+    colorSection: string,
     isBase?: boolean,
-    hexCode?: String
+    hexCode?: string
 }

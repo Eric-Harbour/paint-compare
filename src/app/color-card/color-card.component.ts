@@ -9,5 +9,12 @@ import { RouterOutlet } from "@angular/router"
 })
 export class ColorCard {
   //colorHttpClient = inject(ColorHttpClient);
+  colorService = inject(ColorService);
+
+  ngOnInit() {
+    this.colorService.getAllColors();
+  }
 }
+
+
 

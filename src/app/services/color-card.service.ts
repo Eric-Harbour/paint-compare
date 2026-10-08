@@ -7,8 +7,15 @@ import { Color } from '../models/color.model'
 export class ColorService {
     private readonly colorHttp = inject(HttpClient);
 
+    /**
+     * Need to include error handling and ensuring correct codes are sent
+     */
     getAllColors() {
-        this.colorHttp.get('')
+        this.colorHttp.get('/api/colors', { observe: 'response'}).subscribe((fullResponse) => {
+            console.log(fullResponse.status);
+            console.log(fullResponse.body);
+        }) 
     }
 
 }
+

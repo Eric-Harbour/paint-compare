@@ -1,6 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { ColorCard } from './color-card/color-card.component'
+import { ColorsPage } from './colors-page/colors-page.component'
+import { Home } from './home/home.component'
 
 // @Component({
 //   imports: [RouterOutlet],
@@ -10,10 +12,10 @@ import { ColorCard } from './color-card/color-card.component'
 // })
 
 @Component({
-  imports: [RouterOutlet],
-  selector: 'app-color-card',
-  templateUrl: './color-card/color-card.html',
-  styleUrl: './color-card/color-card.css'
+  imports: [RouterOutlet, ColorCard, ColorsPage, RouterLink, Home],
+  selector: 'app-root',
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('paint-compare');

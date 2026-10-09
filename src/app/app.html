@@ -15,9 +15,18 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
- <nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/colors">Color Page</a>
- </nav>
+ 
+ <header>
+    <a href=""></a>
+    <div class="header-links">
+        <nav class="nav-links">
+            <a routerLink="/" id="hometab">Home</a>
+            <a routerLink="/colors" id="color-page">Color Page</a>
+            <a routerLink="/selectedcolors" id="listAllColors">List Colors</a>
+            <a routerLink="/brands" id="brands">Brands</a>
+        </nav>
+    </div>
+    
+ </header>
 
 <router-outlet />

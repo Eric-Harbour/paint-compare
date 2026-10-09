@@ -1,0 +1,29 @@
+/* .header-links {
+    display: grid;
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    column-width: 300px;
+    
+} */
+
+.nav-links {
+    display:grid;
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    column-width: 300px;
+}
+
+#hometab {
+    grid-column: 1;
+
+}
+
+#color-page {
+    grid-column: 2;
+}
+
+#listAllColors {
+    grid-column: 4;
+}
+
+#brands {
+    grid-column: 5;
+}

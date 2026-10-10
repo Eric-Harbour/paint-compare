@@ -6,24 +6,62 @@
 } */
 
 .nav-links {
-    display:grid;
-    grid-template-columns: 15% 15% 40% 15% 15%;
-    column-width: 300px;
+    /*.nav-links grid only affects left-side-header and right-side-header*/
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 80% 20%;
+    /* column-width: 300px; */
+    background-color: blue;
+
+    height: 100px;
+
+    & .left-side-header-content {
+        display: grid;
+        /* grid-column: 1 / 2; */
+        grid-template-columns: 50% 50%;
+        /* grid-column: 1 / 2; */
+        text-align: center;
+        background-color: yellow;
+
+        & #hometab {
+            border-style: dashed;
+        }
+
+        & #color-page {
+            border-style: dashed;
+        }
+    }
+
+    & .right-side-header-content {
+        /* grid-column: 5 / 6; */
+        display: grid;
+        grid-template-columns: 25% 25%;
+        grid-column: 5 / 6;
+        text-align: left;
+        background-color: red;
+    }
 }
 
+
+
 #hometab {
-    grid-column: 1;
+    /* grid-column: 1;
+    grid-row: 1; */
+
 
 }
 
 #color-page {
-    grid-column: 2;
+    /* grid-column: 2;
+    grid-row: 1; */
 }
 
 #listAllColors {
     grid-column: 4;
+    grid-row: 1;
 }
 
 #brands {
     grid-column: 5;
+    grid-row: 1;
 }

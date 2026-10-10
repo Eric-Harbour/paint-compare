@@ -15,18 +15,23 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
- 
- <header>
+
+<header>
     <a href=""></a>
     <div class="header-links">
         <nav class="nav-links">
-            <a routerLink="/" id="hometab">Home</a>
-            <a routerLink="/colors" id="color-page">Color Page</a>
-            <a routerLink="/selectedcolors" id="listAllColors">List Colors</a>
-            <a routerLink="/brands" id="brands">Brands</a>
+            <div class="left-side-header-content">
+                <a routerLink="/" id="hometab">Home</a>
+                <a routerLink="/colors" id="color-page">Color Page</a>
+            </div>
+            <div class="right-side-header-content">
+                <a routerLink="/selectedcolors" id="listAllColors">List Colors</a>
+                <a routerLink="/brands" id="brands">Brands</a>
+            </div>
+
         </nav>
     </div>
-    
- </header>
+
+</header>
 
 <router-outlet />

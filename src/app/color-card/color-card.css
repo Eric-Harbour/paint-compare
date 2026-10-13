@@ -1,6 +1,6 @@
 .ColorCardSection {
     display: grid;
-    background-color: red;
+    background-color: transparent; 
     width: 500px;
     height: 600px;
     grid-template-rows: 5% 5% 75% 5% 5%;

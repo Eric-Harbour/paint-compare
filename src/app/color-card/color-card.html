@@ -1,11 +1,11 @@
 <body>
-    <div class="ColorCardSection">
-        <p id="colorNumber"></p>
-        <p id="colorName"></p>
-        <p id="locationNumber"></p>
-        <p id="base-interior"></p>
-        <p id="base-exterior"></p>
-        <p id="tinted-primer"></p>
+    <div [style.background-color]=selectedColor.hexCode class="ColorCardSection" appColorCardDirectiveTs>
+        <p id="colorNumber">{{selectedColor.colorNumber}}</p>
+        <p id="colorName">{{selectedColor.colorName}}</p>
+        <p id="locationNumber">{{selectedColor.locationNumber}}</p>
+        <p id="base-interior">{{selectedColor.interiorBase}}</p>
+        <p id="base-exterior">{{selectedColor.exteriorBase}}</p>
+        <p id="tinted-primer">{{selectedColor.tintedPrimer}}</p>
     </div>
 </body>
 <router-outlet></router-outlet>

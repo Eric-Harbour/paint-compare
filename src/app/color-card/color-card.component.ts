@@ -1,9 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import { ColorService } from '../services/color-card.service'
 import { RouterOutlet } from "@angular/router"
-import { ColorQA } from "../models/colorQA.model"
+import { Color } from "../models/color.model"
+import { ColorCardDirectiveTs } from './color-card.directive';
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ColorCardDirectiveTs],
   selector: 'app-color-card',
   styleUrl: './color-card.css',
   templateUrl: './color-card.html',
@@ -12,9 +13,25 @@ export class ColorCard {
   //colorHttpClient = inject(ColorHttpClient);
   colorService = inject(ColorService);
 
+  selectedColor: Color = {
+    companyName:       'Sherwin-Williams',
+    colorNumber:      '6789',
+    colorName:        'BLUE MOSQUE',
+    lrvNumber:       17,
+    lrvDescription:  'DARK',
+    locationNumber:  '167-C6',
+    tintedPrimer:    'P-6',
+    limitations:     '',
+    interiorBase:    '',
+    exteriorBase:    '',
+    colorSection:     'BLUE',
+    isBase:          false,
+    hexCode:         '#01810E'
+  };
+  
 
-  ngOnInit() {
-    this.colorService.getAllColors();
+  ngOnInit(selectedColor: Color) {
+    return selectedColor
   }
 
   /**
@@ -25,7 +42,7 @@ export class ColorCard {
    * 
    * 
    */
-  createColorCard(selectedColor: ColorQA) {
+   updateColorCard(selectedColor: Color) {
 
   }
 }

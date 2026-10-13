@@ -12,7 +12,7 @@ const routeConfig: Routes = [
 
     },
     {
-        path: 'selectedColor',
+        path: 'selectedcolor',
         component: ColorCard,
         title: 'Color Card'
     },

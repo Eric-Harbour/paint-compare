@@ -1,0 +1,79 @@
+.main-stage {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+
+}
+
+.color-section-headers {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 2fr;
+    height: 100px;
+
+    & div>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    & #reds {
+        /* grid-row: 1; */
+        /* grid-column: 1; */
+        background-color: red;
+    }
+
+    & #oranges {
+        /* grid-row: 1; */
+        /* grid-column: 2; */
+        background-color: orange;
+    }
+
+    & #yellows {
+        /* grid-row: 1; */
+        /* grid-column: 3; */
+        background-color: yellow
+    }
+
+    & #greens {
+        /* grid-row: 1; */
+        /* grid-column: 4; */
+        background-color: green;
+    }
+
+    & #blues {
+        /* grid-row: 1; */
+        /* grid-column: 5; */
+        background-color: blue;
+    }
+
+    & #purples {
+        /* grid-row: 1; */
+        /* grid-column: 6; */
+        background-color: purple;
+    }
+
+    & #neutrals {
+        /* grid-row: 1; */
+        /* grid-column: 7; */
+        background-color: gray;
+    }
+
+    & #whites-pastels {
+        /* grid-row: 1; */
+        /* grid-column: 8; */
+        background-color: white;
+    }
+
+    & #historic-timeless {
+        /* grid-row: 1; */
+        /* grid-column: 9; */
+        background-color: teal;
+    }
+
+    & #designer {
+        /* grid-row: 1; */
+        /* grid-column: 10; */
+        background-color: black;
+    }
+}

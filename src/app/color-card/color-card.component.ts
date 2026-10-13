@@ -14,21 +14,22 @@ export class ColorCard {
   colorService = inject(ColorService);
 
   selectedColor: Color = {
-    companyName:       'Sherwin-Williams',
-    colorNumber:      '6789',
-    colorName:        'BLUE MOSQUE',
-    lrvNumber:       17,
-    lrvDescription:  'DARK',
-    locationNumber:  '167-C6',
-    tintedPrimer:    'P-6',
-    limitations:     '',
-    interiorBase:    '',
-    exteriorBase:    '',
-    colorSection:     'BLUE',
-    isBase:          false,
-    hexCode:         '#01810E'
+    // example:
+    companyName: 'Sherwin-Williams',
+    colorNumber: '6789',
+    colorName: 'BLUE MOSQUE',
+    lrvNumber: 17,
+    lrvDescription: 'DARK',
+    locationNumber: '167-C6',
+    tintedPrimer: 'P-6',
+    limitations: '',
+    interiorBase: '',
+    exteriorBase: '',
+    colorSection: 'BLUE',
+    isBase: false,
+    hexCode: '#01810E'
   };
-  
+
 
   ngOnInit(selectedColor: Color) {
     return selectedColor
@@ -42,7 +43,7 @@ export class ColorCard {
    * 
    * 
    */
-   updateColorCard(selectedColor: Color) {
+  updateColorCard(selectedColor: Color) {
 
   }
 }

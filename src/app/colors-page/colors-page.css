@@ -1,26 +1,46 @@
+/*
+    main-stage:
+    1st row: holds the color header
+    2nd row: holds the body that contains the color cards
+*/
 .main-stage {
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-row: 10% 90%;
+    height: 40vw;
+    grid-template-rows: auto;
+    background-color:darkseagreen;
+    align-content:space-around
 
 }
 
 .color-section-headers {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr 2fr;
-    height: 100px;
+    grid-template-rows: 1fr;
+    height: 60px;
+    width: 70vw;
+    column-gap: 30px;
+    overflow-x: scroll;
+    outline-style:double;
+    outline-color:black; */
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    width: 70vw;
+    height: 110px;
+    gap: 50px;
 
-    & div>a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+    overflow-x:scroll;
+    background-color:cornflowerblue;
+
+    
 
     & #reds {
         /* grid-row: 1; */
         /* grid-column: 1; */
         background-color: red;
+        /* font-size: 100px; */
     }
 
     & #oranges {
@@ -77,3 +97,7 @@
         background-color: black;
     }
 }
+
+.color-section-headers > a {
+        font-size: 40px;
+    }

@@ -3,6 +3,7 @@ import { ColorService } from '../services/color-card.service'
 import { RouterOutlet } from "@angular/router"
 import { Color } from "../models/color.model"
 import { ColorCardDirectiveTs } from './color-card.directive';
+import { randomInt } from 'node:crypto';
 @Component({
   imports: [RouterOutlet, ColorCardDirectiveTs],
   selector: 'app-color-card',
@@ -44,7 +45,14 @@ export class ColorCard {
    * 
    */
   updateColorCard(selectedColor: Color) {
+      this.selectedColor = selectedColor;
+  }
 
+  randomColor() {
+    var randomID = randomInt(54) + 1;
+
+    /** Call for the backend and return a color card */
+    this.colorService.
   }
 }
 

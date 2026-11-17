@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
-import { ColorCard } from './color-card/color-card.component'
-import { ColorsPage } from './colors-page/colors-page.component'
-import { Home } from './home/home.component'
+import { ColorCard } from './pages/color-card/color-card.component'
+import { ColorsPage } from './pages/colors-page/colors-page.component'
+import { Home } from './pages/home/home.component'
 
 // @Component({
 //   imports: [RouterOutlet],

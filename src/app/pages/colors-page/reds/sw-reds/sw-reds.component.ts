@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './sw-reds.css',
   templateUrl: './sw-reds.html',
 })
-export class SwReds {}
+export class SWReds {
+
+
+}

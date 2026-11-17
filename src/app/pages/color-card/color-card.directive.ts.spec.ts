@@ -1,4 +1,4 @@
-import { ColorCardDirectiveTs } from './color-card.directive.ts';
+import { ColorCardDirectiveTs } from './color-card.directive.js';
 
 describe('ColorCardDirectiveTs', () => {
   it('should create an instance', () => {

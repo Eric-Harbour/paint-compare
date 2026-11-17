@@ -2,7 +2,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app.component';
 import { provideRouter } from '@angular/router';
-import routeConfig from './app/routes';
+import routeConfig from './app/routes/routes';
 
 bootstrapApplication(App, {
   providers: [
